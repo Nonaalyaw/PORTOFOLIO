@@ -1,0 +1,409 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#projects, #skills, #contact {
+    position: sticky;
+    top: 10px;  
+    background: #fff; 
+    z-index: 1000; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+
+#projects .card, #skills .card, #contact .card {
+    background: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+
+@keyframes move-text {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.title {
+    font-size: 3em;
+    text-align: start;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    animation: float 2s infinite alternate, colorChange 5s infinite alternate, move-text 15s linear infinite; /* Combine floating, color-changing, and horizontal movement animations */
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 128, 185);
+    }
+    50% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(255, 152, 152);
+    }
+}
+
+
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-180deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+.about-image-overlay {
+    position: relative;
+    text-align: center;  
+    color: white;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+    border: 1px solid #000000;
+    padding: 15px;
+    border-radius: 50px;
+    
+   
+}
+
+.overlay-text {
+    position: absolute;
+    letter-spacing: 0.5rem;
+    top: 68%;
+    left: 24%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.cute-hello {
+    font-family: 'Pacifico', cursive; 
+    color: #ff4081; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+.name {
+    
+}
+
+.surname {
+    
+    margin-left: 1100px;
+    margin-bottom: 50px;
+
+}
+
+
+.fadeInOut {
+    animation: fadeInOut 5s infinite alternate; 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.rectangle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;  
+    height: 100vh; 
+    background-color: #000000; 
+}
+
+.left-rectangle {
+    left: 0;
+}
+
+.right-rectangle {
+    right: 0;
+}
+
+.title {
+    position: relative;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 0 0 70%;
+    padding-left: 20px; 
+    padding-top: 50px;
+    padding-right: 20px;
+    text-align: center
+}
+
+.about-image {
+    flex: 0 0 30%; 
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-left: 0; 
+        margin-top: 20px; 
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.title {
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    font-weight:bolder;
+    letter-spacing: 1rem;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 60px;
+}
+
+
+.button:hover {
+    background-color: #ff77d0;
+}
+
+
+.button:active {
+    background-color: #ff00e1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.project-content {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.project-image {
+    flex: 1; 
+    max-width: 200px; 
+}
+
+.project-description {
+    flex: 3; 
+    text-align: left; 
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+
+
+
+
+
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    display: block;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.contact-button i {
+    margin-right: 5px;
+}
+
+.contact-button:hover {
+    background-color: #ff77d0;
+}
+
+
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff77d0;
+}
+
+
+@media (max-width: 768px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px); 
+    }
+}
+
+
+.card {
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

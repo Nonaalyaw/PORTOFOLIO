@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="rectangle left-rectangle"></div>
+        <h1 class="title move-text">PORTFOLIO PORTFOLIO</h1>
+        <div class="rectangle right-rectangle"></div>
+        <nav>
+            <ul>
+                <li><a class="button" href="#about">About</a></li>
+                <li><a class="button" href="#projects">Current Project</a></li>
+                <li><a class="button" href="#skills">Skills</a></li>
+                <li><a class="button" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section id="about" class="about-section">
+        <div class="about-image-overlay">
+            <img src="IMG_0977.jpg" alt="me" class="about-image">
+            <div class="overlay-text fadeInOut">
+                <div class="name">NONA ALYA</div>
+                <div class="surname">WINDYANI</div>
+            </div>
+        </div>
+        <div class="about-text">
+            <h2 class="cute-hello">Hello!</h2>
+
+            <p>I am a dedicated Computer Engineering student with a strong entrepreneurial spirit. Over three years ago, I embarked on a journey as a small business owner, and today, I proudly manage a team of two employees. My business venture allows me to blend technical acumen with leadership skills, driving both technological and organizational success. Fluency in English and a passion for solo travel have enriched my life, providing me with invaluable experiences and the opportunity to meet diverse groups of people from around the world. These interactions not only enhance my communication skills but also broaden my perspectives, fueling my passion for growing my business.</p>
+        </div>
+    </section>
+    
+
+
+    <section id="projects">
+        <h2><i class="fas fa-project-diagram"></i> Current Project</h2>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Kisahloka</h3>
+            <div class="project-content">
+                <div class="project-image">
+                    <img src="kisahloka.jpg" alt="Kisahloka Visual">
+                </div>
+                <div class="project-description">
+                    <p>Kisahloka is an online platform for folklore stories that provides a captivating reading experience with attractive and aesthetic visuals.</p>
+                    <p>Our tagline is :</p>
+                    <p>LIVE THE STORY, PRESERVE THE CULTURE</p>
+                    <p>Which portrays folklore stories as a window that brings us into the richness of culture and its magical world.</p>
+                    <p>In Kisahloka, users can find various types of stories, ranging from fiction to non-fiction, all presented with an engaging layout and complemented by captivating images, illustrations, and graphics.</p>
+                    <p>With intuitive navigation, users can easily explore various stories and find content that matches their interests and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section id="skills">
+        <h2><i class="fas fa-tools"></i> Skills</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-laptop-code"></i> Programming Language</h5>
+                <p class="card-text">Proficiency in Python, Java, and C++</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-chart-line"></i> Business and Entrepreneurial Skills</h5>
+                <p class="card-text">Strong background in business management, with expertise in overseeing operations, strategic planning, and resource allocation. Proven leadership skills are demonstrated through effective team management and successful project oversight. Skilled in financial management, including budgeting and financial forecasting, crucial for maintaining healthy business finances. Excels in customer relations, engaging with clients and building lasting relationships to support business growth. Additionally, possesses a strong ability to innovate and solve problems creatively, enhancing overall business success.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-language"></i> Additional Skills</h5>
+                <p class="card-text">Fluent in English with excellent communication skills, coupled with a love for meeting new people and building networks during solo travels abroad. Deeply passionate about continually growing and scaling the business, demonstrating a strong commitment to both personal and professional development.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me <i class="fas fa-hand-pointer rotate"></i></h2>
+        <div class="pointer"></div>
+        <div class="contact-buttons">
+            <a href="mailto:nonaalyaw@icloud.com" class="contact-button"><i class="fas fa-envelope"></i> Email: nonaalyaw@icloud.com</a>
+            <a href="https://instagram.com/magiccrystals.id" class="contact-button"><i class="fab fa-instagram"></i> Instagram: @magiccrystals.id</a>
+            <a href="https://www.linkedin.com/in/nona-w-504962141/" class="contact-button"><i class="fab fa-linkedin"></i> Connect With Me In LinkedIn</a>
+            <a href="https://github.com/Nonaalyaw" class="contact-button"><i class="fab fa-github"></i> GitHub Nonaalyaw</a>
+        </div>
+        <p>Feel free to send me a message using the form below:</p>
+        <div class="contact-form">
+            <form action="send_message.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nona Alya Windyani. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
